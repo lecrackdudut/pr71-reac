@@ -3,7 +3,7 @@ import Movie from './Movie';
 
 function MovieList(props) {
     const { movies } = props;
-    console.log(movies);
+
     return (
         <>
             {movies.map((movie) => (
