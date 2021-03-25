@@ -1,8 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 function HelloWorld(props) {
+    const [affiche, setAffiche] = useState(0);
+
+    const button = <button onClick={handleClick}>Dire bonjour à {props.name}</button>;
+    const bonjour = <>Hello {props.name}!</>;
+
+    function handleClick() {
+        setAffiche(1);
+    }
+
     return (
-        <p>Hello {props.name}!</p>
+        <p>
+            {affiche ? bonjour : button}
+        </p>
     );
 }
 
