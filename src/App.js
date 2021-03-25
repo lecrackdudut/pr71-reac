@@ -1,4 +1,6 @@
 import HelloWorld from './HelloWorld';
+import MovieList from './MovieList';
+import movies from './movies'
 
 function App() {
   return (
@@ -6,6 +8,7 @@ function App() {
       <HelloWorld name="Baptiste"/>
       <HelloWorld name="Walid"/>
       <HelloWorld name="Matthis"/>
+      <MovieList movies={movies} />
     </>
   );
 }
